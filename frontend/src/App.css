@@ -1,5 +1,6 @@
 body {
-  background-color: #1A1A1D;
+  background-color: #1a1a1d;
+  color: #950740;
 }
 
 .app-container {
@@ -7,13 +8,9 @@ body {
 }
 
 h1 {
- color: #FEFFFF;
+  color: #feffff;
 }
 
 h2 {
-  color:  #C3073F;
-}
-
-h3 {
-  color: #950740;
+  color: #c3073f;
 }
