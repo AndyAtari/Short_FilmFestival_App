@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+gifs = Movie.create([ {url: 'https://giphy.com/gifs/fZd7JstZGbKmc/html5'}, {url: 'https://giphy.com/gifs/3oEjI1erPMTMBFmNHi/html5'},
+{url: 'https://giphy.com/gifs/gZuxOq7zSL5DO/html5'}])
