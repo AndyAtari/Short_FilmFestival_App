@@ -7,20 +7,21 @@ body {
   text-align: center;
 }
 
-h1 {
+.header h1 {
   color: #feffff;
   font-family: sofiapro-regular;
 }
 
-h2 {
+h1 {
   color: #c3073f;
+  font-family: sofiapro-bold;
 }
 
 .header {
   background-color: #950740;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -49,7 +50,7 @@ button {
 .search input {
   width: 50%;
   height: auto;
-  color: #a284ef;
+  color: whitesmoke;
   background-color: #414a4c;
   padding: 14px 48px;
   margin: 5px 0;
@@ -57,8 +58,33 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 500;
 }
 
 ::placeholder {
   color: #feffff;
+}
+
+.watchlist {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-movies {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

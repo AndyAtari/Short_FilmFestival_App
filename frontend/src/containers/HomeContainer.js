@@ -1,10 +1,15 @@
 import React, { Component } from "react";
+import Watchlist from "../components/Watchlist";
+import Showcase from "../components/Showcase";
+import TopMovies from "../components/TopMovies";
 
 class HomeContainer extends Component {
   render() {
     return (
-      <div>
-        <h2>Short Film Showcase</h2>
+      <div className="home">
+        <Watchlist />
+        <Showcase />
+        <TopMovies />
       </div>
     );
   }

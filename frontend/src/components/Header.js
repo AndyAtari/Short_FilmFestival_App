@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="home-link">
-        <h1>Short Film Festival </h1>
+        <h1>Virtual Short Film Festival </h1>
       </div>
       <div className="search">
         <form action="/" method="get">
