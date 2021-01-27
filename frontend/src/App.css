@@ -80,11 +80,35 @@ button {
 .showcase {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.like-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.like-links button {
+  color: #c3073f;
+  background-color: #1a1a1d;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .home {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }

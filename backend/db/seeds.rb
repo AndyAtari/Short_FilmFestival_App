@@ -6,5 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-gifs = Movie.create([ {url: 'https://giphy.com/gifs/fZd7JstZGbKmc/html5'}, {url: 'https://giphy.com/gifs/3oEjI1erPMTMBFmNHi/html5'},
-{url: 'https://giphy.com/gifs/gZuxOq7zSL5DO/html5'}])
+ Movie.create([{ url: 'https://media.giphy.com/media/nVXzt7FSJlX7W/giphy.gif'}])
+ Movie.create([{ url: 'https://media.giphy.com/media/124jbarTbBFB6g/giphy.gif'}])
+ Movie.create([{ url: 'https://media.giphy.com/media/vbnHuPLgHavVm/giphy.gif'}])
+ Movie.create([{ url: 'https://media.giphy.com/media/l2YWBfBGLRdUPsDKM/giphy.gif'}])
