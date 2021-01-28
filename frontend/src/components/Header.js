@@ -18,9 +18,6 @@ const Header = () => {
       <div className="watchlist">
         <button>Watchlist</button>
       </div>
-      <div className="top-movies">
-        <button>Top movies</button>
-      </div>
       <div className="upload-link">
         <button>Upload</button>
       </div>

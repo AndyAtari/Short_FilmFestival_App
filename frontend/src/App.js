@@ -4,7 +4,6 @@ import HomeContainer from "./containers/HomeContainer";
 import UploadContainer from "./containers/UploadContainer";
 import Header from "./components/Header";
 import WatchlistContainer from "./containers/WatchlistContainer";
-import TopMoviesContainer from "./containers/TopMoviesContainer";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomeContainer} />
           <Route exact path="/watchlist" component={WatchlistContainer} />
-          <Route exact path="/top-movies" component={TopMoviesContainer} />
           <Route exact path="/upload" component={UploadContainer} />
         </Switch>
       </Router>
