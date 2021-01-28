@@ -19,9 +19,7 @@ class HomeContainer extends Component {
   render() {
     return (
       <div className="home">
-        <Watchlist />
         <Showcase videos={this.state.videos} />
-        <TopMovies />
       </div>
     );
   }

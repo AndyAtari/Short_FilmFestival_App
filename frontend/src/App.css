@@ -65,16 +65,20 @@ button {
   color: #feffff;
 }
 
-.watchlist {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.watchlist button {
+  padding: 12px 36px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.top-movies {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.top-movies button {
+  padding: 12px 36px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .showcase {
