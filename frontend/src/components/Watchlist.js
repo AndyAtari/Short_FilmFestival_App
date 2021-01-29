@@ -1,11 +1,5 @@
-const Watchlist = () => {
-  return (
-    <div className="watchlist">
-      <h1>Shorts Watchlist</h1>
-      <p>test</p>
-      <p>test</p>
-    </div>
-  );
+const Watchlist = (props) => {
+  return <button onClick={props.addToWatchlist}>Watchlist</button>;
 };
 
 export default Watchlist;
