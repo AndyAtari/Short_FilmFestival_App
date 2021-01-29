@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className="header">
       <div className="home-link">
-        <h1>Virtual Short Film Festival </h1>
+        <Link to="/">
+          <h1>Virtual Short Film Festival </h1>
+        </Link>
       </div>
       <div className="search">
         <form action="/" method="get">
@@ -16,7 +20,9 @@ const Header = () => {
         </form>
       </div>
       <div className="watchlist">
-        <button>Watchlist</button>
+        <Link to="/watchlist">
+          <button>Watchlist</button>
+        </Link>
       </div>
       <div className="upload-link">
         <button>Upload</button>

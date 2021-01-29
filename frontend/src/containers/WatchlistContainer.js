@@ -1,11 +1,19 @@
 import React, { Component } from "react";
+import { store } from "../store";
+import Showcase from "../components/Showcase";
+import Watchlist from "../components/Watchlist";
 
 class WatchlistContainer extends Component {
   state = {
-    watchlist: [],
+    watchlist: store.watchlist,
   };
+
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <h1>Watchlist</h1>
+      </div>
+    );
   }
 }
 

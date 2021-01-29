@@ -25,6 +25,10 @@ h1 {
   align-items: center;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 button {
   background-color: #4e4e50;
   color: #feffff;
