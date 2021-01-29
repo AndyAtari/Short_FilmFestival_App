@@ -9,9 +9,13 @@ import thunk from "redux-thunk";
 import logger from "redux-logger";
 import reportWebVitals from "./reportWebVitals";
 
+const store = createStore(reducer, compose(applyMiddleware(logger, thunk)));
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
