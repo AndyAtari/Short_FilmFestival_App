@@ -1,15 +1,10 @@
 import React from "react";
-import { store } from "../store";
 
-class Showcase extends React.Component {
-  render() {
-    return (
-      <div className="showcase">
-        <h1>Showcase</h1>
-        {this.videoShowcase()}
-      </div>
-    );
-  }
-}
-
+const Showcase = (props) => {
+  return (
+    <div>
+      <img key={props.id} src={props.mov.url} alt={props.id} />
+    </div>
+  );
+};
 export default Showcase;

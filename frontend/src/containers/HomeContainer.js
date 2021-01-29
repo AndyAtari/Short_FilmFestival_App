@@ -18,15 +18,12 @@ class HomeContainer extends Component {
 
   addToWatchlist = (mov) => {
     store.watchlist.push(mov);
-    console.log(store);
   };
 
   videoShowcase = () => {
     return this.state.videos.map((mov) => (
       <div className="movie-card">
-        <div>
-          <img key={mov.id} src={mov.url} alt={mov.id} />
-        </div>
+        <Showcase mov={mov} />
         <div className="like-links">
           <button onClick={() => this.addToWatchlist(mov)}>
             Add to Watchlist
