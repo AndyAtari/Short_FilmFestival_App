@@ -6,6 +6,7 @@ import { store } from "../store";
 class HomeContainer extends Component {
   state = {
     videos: [],
+    hasbeenClicked: false,
   };
 
   componentDidMount() {
@@ -18,6 +19,11 @@ class HomeContainer extends Component {
 
   addToWatchlist = (mov) => {
     store.watchlist.push(mov);
+    this.setState((previousState) => {
+      return {
+        hasbeenClicked: !previousState.hasbeenClicked,
+      };
+    });
   };
 
   videoShowcase = () => {
@@ -26,7 +32,9 @@ class HomeContainer extends Component {
         <Showcase mov={mov} />
         <div className="like-links">
           <button onClick={() => this.addToWatchlist(mov)}>
-            Add to Watchlist
+            {this.state.hasbeenClicked
+              ? "Remove from Watchlist"
+              : "Add to Watchlist"}
           </button>
           <button>Best Live-Action</button>
           <button>Best Animated</button>
