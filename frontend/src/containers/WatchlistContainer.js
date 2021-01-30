@@ -14,11 +14,7 @@ class WatchlistContainer extends Component {
         <div className="movie-card">
           <Showcase mov={mov} />
           <div className="like-links">
-            <button onClick={() => this.addToWatchlist(mov)}>
-              Add to Watchlist
-            </button>
-            <button>Best Live-Action</button>
-            <button>Best Animated</button>
+            <button>Remove From Watchlist</button>
           </div>
         </div>
       );

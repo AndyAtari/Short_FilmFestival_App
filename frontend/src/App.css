@@ -22,6 +22,10 @@ h1 {
   font-family: sofiapro-bold;
 }
 
+h2 {
+  font-family: futura-pt;
+}
+
 .header {
   background-color: #950740;
   display: flex;

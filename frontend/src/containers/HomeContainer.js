@@ -31,8 +31,6 @@ class HomeContainer extends Component {
           <button onClick={() => this.addToWatchlist(mov)}>
             Add to Watchlist
           </button>
-          <button>Best Live-Action</button>
-          <button>Best Animated</button>
         </div>
       </div>
     ));
@@ -42,7 +40,7 @@ class HomeContainer extends Component {
     return (
       <div className="home">
         <TopMovies />
-
+        <h1>Showcase</h1>
         {this.videoShowcase()}
       </div>
     );
