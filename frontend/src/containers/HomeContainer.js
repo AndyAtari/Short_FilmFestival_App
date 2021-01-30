@@ -3,17 +3,18 @@ import Showcase from "../components/Showcase";
 import TopMovies from "../components/TopMovies";
 import { store } from "../store";
 // import Watchlist from "../components/Watchlist";
+import { connect } from "react-redux";
 
 class HomeContainer extends Component {
-  state = {
-    videos: [],
-  };
-
   componentDidMount() {
     fetch("http://localhost:3000/movies")
       .then((resp) => resp.json())
       .then((videos) => {
-        this.setState({ videos });
+        const newVideos = videos.map((video) => ({
+          ...video,
+          onList: false,
+        }));
+        this.props.setVideos(newVideos);
       });
   }
 
@@ -22,14 +23,14 @@ class HomeContainer extends Component {
   };
 
   videoShowcase = () => {
-    return this.state.videos.map((mov) => (
+    const { videos } = this.props;
+    return videos.map((mov) => (
       <div className="movie-card">
         <Showcase mov={mov} />
         <div className="like-links">
           <button onClick={() => this.addToWatchlist(mov)}>
             Add to Watchlist
           </button>
-
           <button>Best Live-Action</button>
           <button>Best Animated</button>
         </div>
@@ -41,10 +42,28 @@ class HomeContainer extends Component {
     return (
       <div className="home">
         <TopMovies />
+
         {this.videoShowcase()}
       </div>
     );
   }
 }
 
-export default HomeContainer;
+const mapStateToProps = (state) => ({
+  videos: state.videos,
+  watchList: state.watchList,
+  offset: state.offset,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  setVideos: (videos) => {
+    dispatch({
+      type: "SET_VIDEOS",
+      payload: {
+        videos: videos,
+      },
+    });
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
