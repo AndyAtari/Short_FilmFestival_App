@@ -128,3 +128,10 @@ button {
   flex-direction: column;
   padding: 20px;
 }
+
+.featured {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}

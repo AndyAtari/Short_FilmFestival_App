@@ -36,10 +36,29 @@ class HomeContainer extends Component {
     ));
   };
 
+  topMovies = () => {
+    const { videos } = this.props;
+    const slicedVideo = videos.splice(
+      Math.floor(Math.random() * videos.length),
+      2
+    );
+    return slicedVideo.map((mov) => (
+      <div className="movie-card">
+        <TopMovies videos={mov} />
+        <div className="like-links">
+          <button onClick={() => this.addToWatchlist(mov)}>
+            Add to Watchlist
+          </button>
+        </div>
+      </div>
+    ));
+  };
+
   render() {
     return (
       <div className="home">
-        <TopMovies />
+        <h1>Featured Movies</h1>
+        <div className="featured">{this.topMovies()}</div>
         <h1>Showcase</h1>
         {this.videoShowcase()}
       </div>
@@ -50,7 +69,6 @@ class HomeContainer extends Component {
 const mapStateToProps = (state) => ({
   videos: state.videos,
   watchList: state.watchList,
- 
 });
 
 const mapDispatchToProps = (dispatch) => ({
