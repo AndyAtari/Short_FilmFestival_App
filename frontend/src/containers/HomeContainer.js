@@ -38,10 +38,7 @@ class HomeContainer extends Component {
 
   topMovies = () => {
     const { videos } = this.props;
-    const slicedVideo = videos.splice(
-      Math.floor(Math.random() * videos.length),
-      2
-    );
+    const slicedVideo = videos.splice(-2, 2);
     return slicedVideo.map((mov) => (
       <div className="movie-card">
         <TopMovies videos={mov} />

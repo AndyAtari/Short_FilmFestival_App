@@ -5,11 +5,11 @@ const Showcase = (props) => {
     <div>
       <p>{props.mov.name}</p>
       <iframe
-        width="560"
-        height="315"
+        width="700"
+        height="393.75"
         src={props.mov.url}
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="fullscreen"
         allowfullscreen
       ></iframe>
     </div>
