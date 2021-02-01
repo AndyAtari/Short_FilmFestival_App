@@ -5,7 +5,7 @@ const Header = () => {
     <div className="header">
       <div className="home-link">
         <Link to="/">
-          <h1>Virtual Short Film Festival </h1>
+          <h1>Animated Short Film Festival </h1>
         </Link>
       </div>
       <div className="search">

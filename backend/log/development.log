@@ -6308,3 +6308,865 @@ Processing by MoviesController#index as */*
 Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 2226)
 
 
+Started GET "/movies" for ::1 at 2021-01-31 15:20:11 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 2225)
+
+
+Started GET "/movies" for ::1 at 2021-01-31 15:20:23 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 2225)
+
+
+Started GET "/movies" for ::1 at 2021-01-31 15:20:30 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 2225)
+
+
+Started GET "/movies" for ::1 at 2021-01-31 15:20:38 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 2225)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 12:29:56 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 5713)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 12:35:30 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2241)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 12:36:44 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2241)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 12:36:59 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 2225)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 12:39:09 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 2225)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "movies"[0m
+  [1m[35m (13.5ms)[0m  [1m[35mCREATE TABLE "movies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar)[0m
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (9.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210129193921)[0m
+  [1m[35m (11.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210124003339);
+
+[0m
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-01 18:55:30.610362"], ["updated_at", "2021-02-01 18:55:30.610362"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "080005f7a4dd0cd1f51870aa8b89355c9e407009"], ["created_at", "2021-02-01 18:55:30.625996"], ["updated_at", "2021-02-01 18:55:30.625996"]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "movies"[0m
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "movies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar)[0m
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (9.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210129193921)[0m
+  [1m[35m (9.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210124003339);
+
+[0m
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-01 18:55:30.711291"], ["updated_at", "2021-02-01 18:55:30.711291"]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-02-01 18:55:30.727898"], ["key", "environment"]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "080005f7a4dd0cd1f51870aa8b89355c9e407009"], ["created_at", "2021-02-01 18:55:30.742373"], ["updated_at", "2021-02-01 18:55:30.742373"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("url", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/embed/D4Dnm6dkOVI"], ["created_at", "2021-02-01 19:00:03.338828"], ["updated_at", "2021-02-01 19:00:03.338828"], ["name", "Presto"]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/movies" for ::1 at 2021-02-01 13:13:41 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 4432)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:16:18 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 960)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:18:09 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 960)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("url", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/embed/kNw8V_Fkw28"], ["created_at", "2021-02-01 19:23:09.954759"], ["updated_at", "2021-02-01 19:23:09.954759"], ["name", "Hair Love"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/movies" for ::1 at 2021-02-01 13:23:16 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.6ms | Allocations: 4560)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:24:07 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1088)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:24:33 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1088)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:24:58 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1088)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:25:07 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:25:08 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1088)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:28:35 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:28:37 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:28:38 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:28:40 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:35:32 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1090)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:37:32 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 1073)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:37:34 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:37:37 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:37:38 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:37:39 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:38:03 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:39:20 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:39:22 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:39:39 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:39:41 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:40:17 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:58:55 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1090)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:58:57 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:58:58 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 13:59:28 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1073)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:02:54 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:02:55 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:03:37 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:03:38 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:05:10 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:05:11 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:05:12 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:05:13 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:11:48 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1090)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:27:25 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1090)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:27:26 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:27:27 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:27:28 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:27:29 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:27:29 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:37:44 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 1091)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:37:45 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:38:27 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:38:29 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:39:56 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:40:00 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:40:13 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:40:30 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:40:32 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:40:59 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:48:17 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1090)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:48:19 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:49:14 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:50:23 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:50:56 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1073)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:50:57 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:50:58 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1073)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:51:01 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 14:51:02 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:02:40 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1090)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:03:06 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:04:51 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:11:26 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1090)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:11:30 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:11:31 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:11:32 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:12:30 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:18:55 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1090)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:18:56 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:18:57 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:18:58 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:21:09 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:22:11 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1073)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("url", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/embed/5L4DQfVIcdg"], ["created_at", "2021-02-01 21:45:10.788508"], ["updated_at", "2021-02-01 21:45:10.788508"], ["name", "Coin Operated"]]
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("url", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/embed/Bl1FOKpFY2Q"], ["created_at", "2021-02-01 21:45:10.803135"], ["updated_at", "2021-02-01 21:45:10.803135"], ["name", "Umbrella"]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("url", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/embed/1Rkn6rnsgc4"], ["created_at", "2021-02-01 21:45:10.820283"], ["updated_at", "2021-02-01 21:45:10.820283"], ["name", "Rebooted"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("url", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/embed/LVLoc6FrLi0"], ["created_at", "2021-02-01 21:45:10.831932"], ["updated_at", "2021-02-01 21:45:10.831932"], ["name", "Lifted"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("url", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/embed/yWd4mzGqQYo"], ["created_at", "2021-02-01 21:45:10.846244"], ["updated_at", "2021-02-01 21:45:10.846244"], ["name", "One Small Step"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("url", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/embed/RtU8nBnpFVE"], ["created_at", "2021-02-01 21:45:10.857598"], ["updated_at", "2021-02-01 21:45:10.857598"], ["name", "Wings"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("url", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/embed/3U-umc-pE20"], ["created_at", "2021-02-01 21:45:10.869248"], ["updated_at", "2021-02-01 21:45:10.869248"], ["name", "The Walk"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("url", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/embed/r6UcW9xLxwo"], ["created_at", "2021-02-01 21:45:10.883388"], ["updated_at", "2021-02-01 21:45:10.883388"], ["name", "Ascension"]]
+  [1m[35m (14.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/movies" for ::1 at 2021-02-01 15:45:21 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.4ms | Allocations: 5585)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:45:26 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 2113)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:45:28 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 2113)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:45:29 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 2113)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:45:35 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 2113)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:45:37 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 2097)
+
+
+Started GET "/" for ::1 at 2021-02-01 15:46:14 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.1ms | Allocations: 297)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 1543)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-02-01 15:46:14 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/movies" for ::1 at 2021-02-01 15:46:17 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.5ms | Allocations: 5668)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:46:59 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 2114)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:48:43 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 2097)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:48:55 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 2097)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:49:25 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 2097)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:49:36 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 2113)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:50:24 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 2097)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:54:47 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 2097)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:55:11 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 2097)
+
+
+Started GET "/movies" for ::1 at 2021-02-01 15:55:26 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 2097)
+
+

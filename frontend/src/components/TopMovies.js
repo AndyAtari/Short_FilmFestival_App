@@ -3,7 +3,14 @@ const TopMovies = (props) => {
     <div className="top-movies">
       <div>
         <p>{props.videos.name}</p>
-        <img key={props.id} src={props.videos.url} alt={props.id} />
+        <iframe
+          width="560"
+          height="315"
+          src={props.videos.url}
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   );
