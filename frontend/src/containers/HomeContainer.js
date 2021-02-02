@@ -12,11 +12,7 @@ class HomeContainer extends Component {
     fetch("http://localhost:3000/movies")
       .then((resp) => resp.json())
       .then((videos) => {
-        const newVideos = videos.map((video) => ({
-          ...video,
-          onList: false,
-        }));
-        this.props.setVideos(newVideos);
+        this.props.setVideos(videos);
       });
   }
 
