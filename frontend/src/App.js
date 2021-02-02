@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomeContainer from "./containers/HomeContainer";
 import UploadContainer from "./containers/UploadContainer";
 import Header from "./components/Header";
-import WatchlistContainer from "./containers/WatchlistContainer";
+import QandAContainer from "./containers/QandAContainer";
+import LoginContainer from "./containers/LoginContainer";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={HomeContainer} />
-          <Route exact path="/watchlist" component={WatchlistContainer} />
+          <Route exact path="/q&a" component={QandAContainer} />
           <Route exact path="/upload" component={UploadContainer} />
+          <Route exact path="/login" component={LoginContainer} />
         </Switch>
       </Router>
     </div>

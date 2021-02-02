@@ -8,14 +8,9 @@ const Header = () => {
           <h1>An Animator's Dozen</h1>
         </Link>
       </div>
-      <div className="link-showcase">
-        <Link to="/">
-          <h3>Showcase</h3>
-        </Link>
-      </div>
-      <div className="watchlist">
-        <Link to="/watchlist">
-          <h3>Submissions</h3>
+      <div className="questions">
+        <Link to="/q&a">
+          <h3>Filmmaker Q&A</h3>
         </Link>
       </div>
       <div className="upload-link">
@@ -24,7 +19,7 @@ const Header = () => {
         </Link>
       </div>
       <div className="login">
-        <Link to="/">
+        <Link to="/login">
           <h3>Log in</h3>
         </Link>
       </div>

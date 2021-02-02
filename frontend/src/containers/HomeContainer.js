@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import Showcase from "../components/Showcase";
-import TopMovies from "../components/TopMovies";
-import { store } from "../store";
-// import Watchlist from "../components/Watchlist";
 import { connect } from "react-redux";
+import Intro from "../components/Intro";
 
 class HomeContainer extends Component {
+  state = {
+    showStory: false,
+  };
+
   componentDidMount() {
     fetch("http://localhost:3000/movies")
       .then((resp) => resp.json())
@@ -18,43 +20,32 @@ class HomeContainer extends Component {
       });
   }
 
-  addToWatchlist = (mov) => {
-    store.watchlist.push(mov);
-  };
-
   videoShowcase = () => {
     const { videos } = this.props;
     return videos.map((mov) => (
       <div className="movie-card">
         <Showcase mov={mov} />
-        {/* <div className="like-links">
-          <button onClick={() => this.addToWatchlist(mov)}>
-            Add to Watchlist
-          </button>
-        </div> */}
       </div>
     ));
   };
 
-  topMovies = () => {
-    const { videos } = this.props;
-    const slicedVideo = videos.splice(-2, 2);
-    return slicedVideo.map((mov) => (
-      <div className="movie-card">
-        <TopMovies videos={mov} />
-        <div className="like-links">
-          <button onClick={() => this.addToWatchlist(mov)}>
-            Add to Watchlist
-          </button>
-        </div>
-      </div>
-    ));
+  handleClick = (event) => {
+    event.preventDefault();
+    this.setState({ showStory: !this.state.showStory });
   };
 
   render() {
     return (
-      <div className="home">
-        <h1>Animator's Showcase</h1>
+      <div className="show-title">
+        <div className="intro">
+          <a onClick={this.handleClick.bind(this)} href="*">
+            <h1 className="story-link">The story so far ...</h1>
+          </a>
+          {this.state.showStory && <Intro />}
+        </div>
+        <h1>
+          <u>Animator's Showcase</u>
+        </h1>
         <div className="home">{this.videoShowcase()}</div>
       </div>
     );

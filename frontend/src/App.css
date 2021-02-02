@@ -22,15 +22,6 @@ p {
   font-family: chilanka, segoe script, purisa, comic sans ms, cursive;
 }
 
-.header p {
-  background-image: linear-gradient(to left, black, grey, #feffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: rainbow_animation 1s ease-in-out infinite;
-  font-family: chilanka, segoe script, purisa, comic sans ms, cursive;
-  font-size: 14px;
-}
-
 h1 {
   color: #c3073f;
   font-family: brandon-grotesque;
@@ -53,10 +44,27 @@ a:link {
   text-decoration: none;
 }
 
-button {
+/* button {
   background-color: #1a1a1d;
   color: #feffff;
   cursor: pointer;
+  padding: 12px 36px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+} */
+
+.link-showcase h3 {
+  font-weight: 400;
+  color: #feffff;
+  font-family: Segoe UI;
+}
+
+.questions h3 {
+  font-weight: 400;
+  color: #feffff;
+  font-family: Segoe UI;
 }
 
 .login h3 {
@@ -71,7 +79,7 @@ button {
   font-family: Segoe UI;
 }
 
-.btn-showcase button {
+/* .btn-showcase button {
   padding: 12px 36px;
   text-align: center;
   text-decoration: none;
@@ -91,24 +99,18 @@ button {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-}
+} */
 
 ::placeholder {
   color: #feffff;
 }
 
-.watchlist h3 {
-  font-weight: 400;
-  color: #feffff;
-  font-family: Segoe UI;
-}
-
-.top-movies {
+/* .top-movies {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-}
+} */
 
 .showcase {
   display: flex;
@@ -117,7 +119,7 @@ button {
   align-items: center;
 }
 
-.like-links {
+/* .like-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -132,7 +134,7 @@ button {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-}
+} */
 
 .home {
   display: flex;
@@ -154,8 +156,8 @@ button {
   align-items: center;
 }
 
-.link-showcase h3 {
-  font-weight: 400;
-  color: #feffff;
-  font-family: Segoe UI;
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

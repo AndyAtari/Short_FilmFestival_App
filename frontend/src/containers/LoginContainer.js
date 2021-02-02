@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-class UploadContainer extends Component {
+class LoginContainer extends Component {
   render() {
     return (
       <div>
-        <h1>Upload</h1>
+        <h1>Log in</h1>
       </div>
     );
   }
 }
 
-export default UploadContainer;
+export default LoginContainer;

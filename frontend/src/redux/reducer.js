@@ -1,6 +1,5 @@
 const initialState = {
   videos: [],
-  watchList: [],
 };
 
 export const reducer = (state = initialState, action) => {
