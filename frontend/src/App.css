@@ -22,6 +22,15 @@ p {
   font-family: chilanka, segoe script, purisa, comic sans ms, cursive;
 }
 
+.header p {
+  background-image: linear-gradient(to left, black, grey, #feffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow_animation 1s ease-in-out infinite;
+  font-family: chilanka, segoe script, purisa, comic sans ms, cursive;
+  font-size: 14px;
+}
+
 h1 {
   color: #c3073f;
   font-family: brandon-grotesque;

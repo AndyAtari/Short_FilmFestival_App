@@ -27,11 +27,11 @@ class HomeContainer extends Component {
     return videos.map((mov) => (
       <div className="movie-card">
         <Showcase mov={mov} />
-        <div className="like-links">
+        {/* <div className="like-links">
           <button onClick={() => this.addToWatchlist(mov)}>
             Add to Watchlist
           </button>
-        </div>
+        </div> */}
       </div>
     ));
   };
@@ -54,9 +54,7 @@ class HomeContainer extends Component {
   render() {
     return (
       <div className="home">
-        <h1>Featured Movies</h1>
-        <div className="featured">{this.topMovies()}</div>
-        <h1>Showcase</h1>
+        <h1>Animator's Showcase</h1>
         {this.videoShowcase()}
       </div>
     );
