@@ -55,7 +55,7 @@ class HomeContainer extends Component {
     return (
       <div className="home">
         <h1>Animator's Showcase</h1>
-        {this.videoShowcase()}
+        <div className="home">{this.videoShowcase()}</div>
       </div>
     );
   }

@@ -45,7 +45,7 @@ h2 {
   background-color: #950740;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -54,20 +54,24 @@ a:link {
 }
 
 button {
-  background-color: #4e4e50;
+  background-color: #1a1a1d;
   color: #feffff;
   cursor: pointer;
 }
 
-.login button {
-  padding: 12px 48px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 700;
+.login h3 {
+  font-weight: 400;
+  color: #feffff;
+  font-family: Segoe UI;
 }
 
-.upload-link button {
+.upload-link h3 {
+  font-weight: 400;
+  color: #feffff;
+  font-family: Segoe UI;
+}
+
+.btn-showcase button {
   padding: 12px 36px;
   text-align: center;
   text-decoration: none;
@@ -93,12 +97,10 @@ button {
   color: #feffff;
 }
 
-.watchlist button {
-  padding: 12px 36px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 700;
+.watchlist h3 {
+  font-weight: 400;
+  color: #feffff;
+  font-family: Segoe UI;
 }
 
 .top-movies {
@@ -134,7 +136,8 @@ button {
 
 .home {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -149,4 +152,10 @@ button {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.link-showcase h3 {
+  font-weight: 400;
+  color: #feffff;
+  font-family: Segoe UI;
 }
