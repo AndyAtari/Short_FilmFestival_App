@@ -1,5 +1,10 @@
+import cuid from "cuid";
+export const cuidFn = cuid;
+
 const initialState = {
   videos: [],
+  questions: [],
+  answers: [],
 };
 
 export const reducer = (state = initialState, action) => {

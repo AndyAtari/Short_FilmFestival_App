@@ -50,7 +50,6 @@ class HomeContainer extends Component {
 
 const mapStateToProps = (state) => ({
   videos: state.videos,
-  watchList: state.watchList,
 });
 
 const mapDispatchToProps = (dispatch) => ({
