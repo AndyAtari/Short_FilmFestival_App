@@ -22,6 +22,7 @@ class QuestionAsked extends Component {
   render() {
     return (
       <div className="question-submit">
+        <i class="bi bi-question-circle-fill"></i>
         <form onSubmit={(event) => this.handleOnSubmit(event)}>
           <input
             type="text"
