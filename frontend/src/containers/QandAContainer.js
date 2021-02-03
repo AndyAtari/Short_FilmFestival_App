@@ -8,8 +8,8 @@ class QandAContainer extends Component {
     return (
       <div>
         <h1>Filmmaker Q&A</h1>
-        {/* <QuestionAsked addQuestion={this.props.addQuestion} />
-        <Questions
+        <QuestionAsked addQuestion={this.props.addQuestion} />
+        {/* <Questions
           questions={this.props.questions}
           deleteQuestion={this.props.deleteQuestion}
         /> */}
