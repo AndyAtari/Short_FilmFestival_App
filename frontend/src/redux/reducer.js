@@ -22,6 +22,16 @@ export const reducer = (state = initialState, action) => {
         (question) => question.id !== action.id
       );
       return { ...state, questions };
+    case "ADD_ANSWER":
+      const answer = {
+        text: action.answer.text,
+        questionId: action.answer.questionId,
+        id: cuidFn(),
+      };
+      return { ...state, answers: [...state.answers, answer] };
+    case "DELETE_ANSWER":
+      const answers = state.answers.filter((answer) => answer.id !== action.id);
+      return { ...state, answers };
 
     default:
       return { ...state };
