@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import QuestionAsked from "../components/QuestionAsked";
-import Questions from "../components/Questions";
+import AnswerReply from "../components/answers/AnswerReply";
+import Answers from "../components/answers/Answers";
 import { connect } from "react-redux";
 
 class AnswerContainer extends Component {
@@ -13,10 +13,21 @@ class AnswerContainer extends Component {
         />
         <Answers
           answers={this.props.answers}
-          answerId={this.props.answer.id}
+          questionId={this.props.answer.id}
           deleteAnswer={this.props.deleteAnswer}
         />
       </div>
     );
   }
 }
+
+const mapStateToProps = ({ answers }) => {
+  return { answers };
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  addAnswer: (answer) => dispatch({ type: "ADD_ANSWER", answer }),
+  deleteAnswer: (id) => dispatch({ type: "DELETE_ANSWER", id }),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(AnswerContainer);
