@@ -13,7 +13,7 @@ class AnswerContainer extends Component {
         />
         <Answers
           answers={this.props.answers}
-          questionId={this.props.answer.id}
+          questionId={this.props.question.id}
           deleteAnswer={this.props.deleteAnswer}
         />
       </div>

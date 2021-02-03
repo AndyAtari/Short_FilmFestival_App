@@ -6,6 +6,23 @@ class AnswerReply extends Component {
     text: "",
   };
 
+  handleOnChange = (event) => {
+    this.setState({
+      text: event.target.value,
+    });
+  };
+
+  handleOnSubmit = (event) => {
+    event.preventDefault();
+    this.props.addAnswer({
+      text: this.state.text,
+      questionId: this.props.questionId,
+    });
+    this.setState({
+      text: "",
+    });
+  };
+
   render() {
     return (
       <div>
