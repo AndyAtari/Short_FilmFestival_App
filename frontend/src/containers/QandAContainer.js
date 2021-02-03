@@ -1,29 +1,28 @@
 import React, { Component } from "react";
-import Showcase from "../components/Showcase";
-import QandA from "../components/QandA";
+import QuestionAsked from "../components/QuestionAsked";
+import Questions from "../components/Questions";
+import { connect } from "react-redux";
 
 class QandAContainer extends Component {
-  state = {};
-
-  // renderWatchlist = () =>
-  //   this.state.watchlist.map((mov) => {
-  //     return (
-  //       <div className="movie-card">
-  //         <Showcase mov={mov} />
-  //         <div className="like-links">
-  //           <button>Remove From Watchlist</button>
-  //         </div>
-  //       </div>
-  //     );
-  //   });
-
   render() {
     return (
       <div>
         <h1>Filmmaker Q&A</h1>
+        {/* <QuestionAsked addQuestion={this.props.addQuestion} />
+        <Questions
+          questions={this.props.questions}
+          deleteQuestion={this.props.deleteQuestion}
+        /> */}
       </div>
     );
   }
 }
 
-export default QandAContainer;
+const mapStateToProps = (state) => ({ questions: state.questions });
+
+const mapDispatchToProps = (dispatch) => ({
+  addQuestion: (text) => dispatch({ type: "ADD QUESTION", text }),
+  deleteQuestion: (id) => dispatch({ type: "DELETE_QUESTION", id }),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(QandAContainer);
