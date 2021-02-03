@@ -17,6 +17,11 @@ export const reducer = (state = initialState, action) => {
         ...state,
         questions: [...state.questions, question],
       };
+    case "DELETE_QUESTION":
+      const questions = state.questions.filter(
+        (question) => question.id !== action.id
+      );
+      return { ...state, questions };
 
     default:
       return { ...state };

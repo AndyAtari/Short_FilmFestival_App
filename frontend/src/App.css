@@ -112,7 +112,7 @@ a:link {
 }
 
 input[type="text"] {
-  width: 100%;
+  width: 50rem;
   padding: 10px 10px;
   margin: 10px 5px;
   box-sizing: border-box;
@@ -120,8 +120,7 @@ input[type="text"] {
   background-color: #fdfcfa;
   color: white;
   border: 2px solid #950740;
-  font-size: 2em;
-  height: 2rem;
+  font-size: large;
 }
 
 input[type="text"]:focus {
@@ -131,7 +130,7 @@ input[type="text"]:focus {
 .submit {
   color: #c3073f;
   background-color: #1a1a1d;
-  padding: 10px 20px;
+  padding: 13px 20px;
   text-align: center;
   text-decoration: none;
   font-size: 14px;
@@ -143,4 +142,24 @@ input[type="text"]:focus {
 
 .bi::before {
   font-size: 40px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #1a1a1d;
+}
+
+li {
+  color: #fdfcfa;
+  font-size: large;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

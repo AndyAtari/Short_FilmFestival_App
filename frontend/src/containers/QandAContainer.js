@@ -9,10 +9,10 @@ class QandAContainer extends Component {
       <div>
         <h1>Filmmaker Q&A</h1>
         <QuestionAsked addQuestion={this.props.addQuestion} />
-        {/* <Questions
+        <Questions
           questions={this.props.questions}
           deleteQuestion={this.props.deleteQuestion}
-        /> */}
+        />
       </div>
     );
   }
@@ -21,7 +21,7 @@ class QandAContainer extends Component {
 const mapStateToProps = (state) => ({ questions: state.questions });
 
 const mapDispatchToProps = (dispatch) => ({
-  addQuestion: (text) => dispatch({ type: "ADD QUESTION", text }),
+  addQuestion: (text) => dispatch({ type: "ADD_QUESTION", text }),
   deleteQuestion: (id) => dispatch({ type: "DELETE_QUESTION", id }),
 });
 
