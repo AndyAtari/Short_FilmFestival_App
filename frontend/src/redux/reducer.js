@@ -5,6 +5,7 @@ const initialState = {
   videos: [],
   questions: [],
   answers: [],
+  uploads: [],
 };
 
 export const reducer = (state = initialState, action) => {
