@@ -26,6 +26,7 @@ class QuestionAsked extends Component {
         <form onSubmit={(event) => this.handleOnSubmit(event)}>
           <input
             type="text"
+            placeholder="Q:"
             value={this.state.text}
             onChange={(event) => this.handleOnChange(event)}
           />

@@ -7,14 +7,14 @@ class AnswerContainer extends Component {
   render() {
     return (
       <div>
-        <AnswerReply
-          addAnswer={this.props.addAnswer}
-          questionId={this.props.question.id}
-        />
         <Answers
           answers={this.props.answers}
           questionId={this.props.question.id}
           deleteAnswer={this.props.deleteAnswer}
+        />
+        <AnswerReply
+          addAnswer={this.props.addAnswer}
+          questionId={this.props.question.id}
         />
       </div>
     );

@@ -28,10 +28,16 @@ class AnswerReply extends Component {
       <div>
         <form onSubmit={this.handleOnSubmit}>
           <label>
-            Reply:
-            <textarea value={this.state.text} onChange={this.handleOnChange} />
+            <i class="bi bi-chat-text-fill"></i>
           </label>
-          <input type="submit" className="submit"></input>
+          <input
+            type="text"
+            placeholder="A:"
+            value={this.state.text}
+            onChange={this.handleOnChange}
+          />
+
+          <input type="submit" className="submit" value="Answer"></input>
         </form>
       </div>
     );

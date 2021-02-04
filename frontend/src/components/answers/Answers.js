@@ -13,7 +13,7 @@ class Answers extends Component {
     });
     return (
       <div>
-        <ul>{answerList}</ul>
+        <ul className="answer-list">{answerList}</ul>
       </div>
     );
   }

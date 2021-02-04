@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 class QandAContainer extends Component {
   render() {
     return (
-      <div>
+      <div className="q-a">
         <h1>Filmmaker Q&A</h1>
         <QuestionAsked addQuestion={this.props.addQuestion} />
         <Questions
