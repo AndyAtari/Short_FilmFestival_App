@@ -15,7 +15,7 @@ const Header = () => {
       </div>
       <div className="upload-link">
         <Link to="/upload">
-          <h3>Upload</h3>
+          <h3>Submit Your Short</h3>
         </Link>
       </div>
       <div className="login">
