@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import UploadForm from "../components/UploadForm";
 import UploadCard from "../components/uploads/UploadCard";
-import { uploadVideo } from "../redux/actionCreator";
 
 class UploadContainer extends Component {
   render() {
@@ -9,6 +9,9 @@ class UploadContainer extends Component {
     return (
       <div>
         <h1>Submit Your Animated Short Film</h1>
+        <div className="upload-form">
+          <UploadForm uploadVideo={this.props.uploadVideo} />
+        </div>
         <div>
           {uploads.map((upload) => (
             <UploadCard upload={upload} />
@@ -25,4 +28,8 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { uploadVideo })(UploadContainer);
+const mapDispatchToProps = (dispatch) => ({
+  uploadVideo: (text) => dispatch({ type: "UPLOAD_VIDEO", text }),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(UploadContainer);

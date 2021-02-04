@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
-import { uploadVideo } from "../redux/actionCreator";
 
 class UploadForm extends Component {
   state = {
@@ -29,25 +27,31 @@ class UploadForm extends Component {
     return (
       <div>
         <form onSubmit={this.handleOnSubmit}>
-          <input
-            type="text"
-            placeholder="Title of Short Film"
-            name="title"
-            value={this.state.title}
-            onChange={this.handleOnChange}
-          />
-          <input
-            type="text"
-            placeholder="Embeded Url of Film"
-            name="link"
-            value={this.state.link}
-            onChange={this.handleOnChange}
-          />
-          <button type="submit">Submit For Consideration</button>
+          <div>
+            <input
+              type="text"
+              placeholder="Title of Short Film"
+              name="title"
+              value={this.state.title}
+              onChange={this.handleOnChange}
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Embeded Url of Film"
+              name="link"
+              value={this.state.link}
+              onChange={this.handleOnChange}
+            />
+          </div>
+          <button className="submit" type="submit">
+            Submit For Consideration
+          </button>
         </form>
       </div>
     );
   }
 }
 
-export default connect(null, { uploadVideo })(UploadForm);
+export default UploadForm;

@@ -9654,3 +9654,10 @@ Processing by MoviesController#index as */*
 Completed 200 OK in 95ms (Views: 89.0ms | ActiveRecord: 1.3ms | Allocations: 1055942)
 
 
+Started GET "/movies" for ::1 at 2021-02-04 12:03:39 -0600
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (1.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."updated_at" DESC[0m
+  ↳ app/controllers/movies_controller.rb:5:in `index'
+Completed 200 OK in 86ms (Views: 81.6ms | ActiveRecord: 1.2ms | Allocations: 1055942)
+
+

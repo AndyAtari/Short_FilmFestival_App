@@ -34,7 +34,11 @@ export const reducer = (state = initialState, action) => {
       const answers = state.answers.filter((answer) => answer.id !== action.id);
       return { ...state, answers };
     case "UPLOAD_VIDEO":
-      return state.concat(action.uploads);
+      const newVideo = { text: action.text };
+      return {
+        ...state,
+        uploads: [...state.uploads, newVideo],
+      };
 
     default:
       return { ...state };

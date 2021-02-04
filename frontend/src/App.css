@@ -121,9 +121,6 @@ input[type="text"] {
   color: white;
   border: 2px solid #950740;
   font-size: large;
-}
-
-input[type="text"]:focus {
   background-color: grey;
 }
 
@@ -170,4 +167,10 @@ ol {
 .question-color {
   color: #c3073f;
   font-weight: 700;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
