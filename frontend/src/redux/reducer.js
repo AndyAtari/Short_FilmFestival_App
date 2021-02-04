@@ -33,6 +33,8 @@ export const reducer = (state = initialState, action) => {
     case "DELETE_ANSWER":
       const answers = state.answers.filter((answer) => answer.id !== action.id);
       return { ...state, answers };
+    case "UPLOAD_VIDEO":
+      return state.concat(action.uploads);
 
     default:
       return { ...state };

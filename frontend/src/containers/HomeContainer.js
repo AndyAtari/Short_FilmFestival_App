@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Showcase from "../components/Showcase";
 import { connect } from "react-redux";
 import Intro from "../components/Intro";
+import { getVideos } from "../redux/actionCreator";
 
 class HomeContainer extends Component {
   state = {
@@ -9,11 +10,7 @@ class HomeContainer extends Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:3000/movies")
-      .then((resp) => resp.json())
-      .then((videos) => {
-        this.props.setVideos(videos);
-      });
+    this.props.getVideos();
   }
 
   videoShowcase = () => {
@@ -52,15 +49,4 @@ const mapStateToProps = (state) => ({
   videos: state.videos,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  setVideos: (videos) => {
-    dispatch({
-      type: "SET_VIDEOS",
-      payload: {
-        videos: videos,
-      },
-    });
-  },
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
+export default connect(mapStateToProps, { getVideos })(HomeContainer);
