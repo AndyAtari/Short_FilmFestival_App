@@ -153,6 +153,7 @@ li {
   color: #fdfcfa;
   font-size: 24px;
   line-height: 300%;
+  font-weight: 100;
 }
 
 ol {
@@ -168,4 +169,5 @@ ol {
 
 .question-color {
   color: #c3073f;
+  font-weight: 700;
 }

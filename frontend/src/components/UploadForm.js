@@ -17,6 +17,12 @@ class UploadForm extends Component {
 
   handleOnSubmit = (event) => {
     event.preventDefault();
+    const upload = { ...this.state };
+    this.props.uploadVideo(upload);
+    this.setState({
+      title: "",
+      link: "",
+    });
   };
 
   render() {
