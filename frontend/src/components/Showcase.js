@@ -5,6 +5,7 @@ const Showcase = (props) => {
     <div>
       <p>{props.mov.name}</p>
       <iframe
+        title={props.mov.name}
         width="700"
         height="393.75"
         src={props.mov.url}
