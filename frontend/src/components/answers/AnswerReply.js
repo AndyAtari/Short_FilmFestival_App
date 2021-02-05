@@ -18,6 +18,17 @@ class AnswerReply extends Component {
       text: this.state.text,
       questionId: this.props.questionId,
     });
+    const postAnswer = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        content: this.state.text,
+        question_id: this.props.questionId,
+      }),
+    };
+    fetch("http://localhost:3000/answers", postAnswer).then((resp) =>
+      resp.json().then((answer) => console.log(answer))
+    );
     this.setState({
       text: "",
     });

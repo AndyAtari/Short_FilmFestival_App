@@ -5,13 +5,13 @@ class AnswersController < ApplicationController
     end
 
     def create
-        @answer = Answer.create(answer_params)
-        render json: @question
+        @answer = Answer.create(answers_params)
+        render json: @answer
     end
 
 
     private
-    def answer_params
-        params.require(:answer).permit(:content)
+    def answers_params
+        params.require(:answer).permit(:content, :question_id, :id)
     end
 end
