@@ -18,6 +18,8 @@ export const reducer = (state = initialState, action) => {
         ...state,
         questions: [...state.questions, question],
       };
+    case "SET_QUESTIONS":
+      return { ...state, questions: action.payload.questions };
     case "DELETE_QUESTION":
       const questions = state.questions.filter(
         (question) => question.id !== action.id

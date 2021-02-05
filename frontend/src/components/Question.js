@@ -11,7 +11,7 @@ class Question extends Component {
     return (
       <div>
         <li className="question-color">
-          {question.text}{" "}
+          {question.title}{" "}
           <button onClick={() => this.handleOnClick()}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
