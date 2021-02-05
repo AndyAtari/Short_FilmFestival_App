@@ -4,6 +4,13 @@ import Answers from "../components/answers/Answers";
 import { connect } from "react-redux";
 
 class AnswerContainer extends Component {
+  componentDidMount() {
+    fetch("http://localhost:3000/answers")
+      .then((resp) => resp.json())
+      .then((answers) => {
+        this.props.setAnswers(answers);
+      });
+  }
   render() {
     return (
       <div>
@@ -28,6 +35,8 @@ const mapStateToProps = ({ answers }) => {
 const mapDispatchToProps = (dispatch) => ({
   addAnswer: (answer) => dispatch({ type: "ADD_ANSWER", answer }),
   deleteAnswer: (id) => dispatch({ type: "DELETE_ANSWER", id }),
+  setAnswers: (answers) =>
+    dispatch({ type: "SET_ANSWERS", payload: { answers: answers } }),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(AnswerContainer);
