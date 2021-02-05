@@ -14,6 +14,14 @@ class QuestionAsked extends Component {
   handleOnSubmit(event) {
     event.preventDefault();
     this.props.addQuestion(this.state.text);
+    const postText = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ title: this.state.text }),
+    };
+    fetch("http://localhost:3000/questions", postText).then((resp) =>
+      resp.json()
+    );
     this.setState({
       text: "",
     });
