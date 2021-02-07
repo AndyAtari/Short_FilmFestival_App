@@ -1,36 +1,34 @@
 import React, { Component } from "react";
-import Answers from "./Answers";
 
 class AnswerReply extends Component {
-  state = {
-    text: "",
-  };
+  constructor() {
+    super();
+    this.state = {
+      content: "",
+      question_id: null,
+    };
+    this.handleOnChange = this.handleOnChange.bind(this);
+  }
 
   handleOnChange = (event) => {
     this.setState({
-      text: event.target.value,
+      content: event.target.value,
+      question_id: this.props.questionId,
     });
   };
 
   handleOnSubmit = (event) => {
     event.preventDefault();
-    this.props.addAnswer({
-      text: this.state.text,
-      questionId: this.props.questionId,
-    });
-    const postAnswer = {
+    let bodyData = this.state;
+    fetch("http://localhost:3000/answers", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        content: this.state.text,
-        question_id: this.props.questionId,
-      }),
-    };
-    fetch("http://localhost:3000/answers", postAnswer).then((resp) =>
-      resp.json().then((answer) => console.log(answer))
-    );
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(bodyData),
+    }).then((resp) => resp.json());
+
+    this.props.addAnswer(bodyData);
     this.setState({
-      text: "",
+      content: "",
     });
   };
 
@@ -44,7 +42,7 @@ class AnswerReply extends Component {
           <input
             type="text"
             placeholder="A:"
-            value={this.state.text}
+            value={this.state.content}
             onChange={this.handleOnChange}
           />
 

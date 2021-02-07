@@ -7,8 +7,8 @@ class AnswerContainer extends Component {
   componentDidMount() {
     fetch("http://localhost:3000/answers")
       .then((resp) => resp.json())
-      .then((answers) => {
-        this.props.setAnswers(answers);
+      .then((answer) => {
+        this.props.setAnswers(answer);
       });
   }
   render() {

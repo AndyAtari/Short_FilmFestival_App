@@ -4,6 +4,13 @@ import UploadForm from "../components/UploadForm";
 import UploadCard from "../components/uploads/UploadCard";
 
 class UploadContainer extends Component {
+  componentDidMount() {
+    fetch("http://localhost:3000/uploads")
+      .then((resp) => resp.json())
+      .then((uploads) => {
+        this.props.setUploads(uploads);
+      });
+  }
   render() {
     const { uploads } = this.props;
     return (
@@ -29,7 +36,9 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  uploadVideo: (text) => dispatch({ type: "UPLOAD_VIDEO", text }),
+  uploadVideo: (upload) => dispatch({ type: "UPLOAD_VIDEO", upload }),
+  setUploads: (uploads) =>
+    dispatch({ type: "SET_UPLOADS", payload: { uploads: uploads } }),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(UploadContainer);

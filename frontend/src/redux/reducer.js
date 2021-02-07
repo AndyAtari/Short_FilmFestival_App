@@ -14,10 +14,9 @@ export const reducer = (state = initialState, action) => {
       return { ...state, videos: action.payload.videos };
 
     case "ADD_QUESTION":
-      const question = { text: action.text, id: cuidFn() };
       return {
         ...state,
-        questions: [...state.questions, question],
+        questions: [...state.questions, action.question],
       };
 
     case "SET_QUESTIONS":
@@ -30,12 +29,7 @@ export const reducer = (state = initialState, action) => {
       return { ...state, questions };
 
     case "ADD_ANSWER":
-      const answer = {
-        text: action.answer.text,
-        questionId: action.answer.questionId,
-        id: cuidFn(),
-      };
-      return { ...state, answers: [...state.answers, answer] };
+      return { ...state, answers: [...state.answers, action.answer] };
 
     case "SET_ANSWERS":
       return { ...state, answers: action.payload.answers };
@@ -45,12 +39,13 @@ export const reducer = (state = initialState, action) => {
       return { ...state, answers };
 
     case "UPLOAD_VIDEO":
-      const newVideo = { text: action.text };
       return {
         ...state,
-        uploads: [...state.uploads, newVideo],
+        uploads: [...state.uploads, action.upload],
       };
 
+    case "SET_UPLOADS":
+      return { ...state, uploads: action.payload.uploads };
     default:
       return { ...state };
   }

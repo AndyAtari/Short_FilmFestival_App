@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 
 class UploadForm extends Component {
-  state = {
-    title: "",
-    link: "",
-  };
+  constructor() {
+    super();
+    this.state = {
+      title: "",
+      src: "",
+    };
 
+    this.handleOnChange = this.handleOnChange.bind(this);
+  }
   handleOnChange = (event) => {
     const { value, name } = event.target;
     this.setState({
@@ -15,11 +19,20 @@ class UploadForm extends Component {
 
   handleOnSubmit = (event) => {
     event.preventDefault();
-    const upload = { ...this.state };
-    this.props.uploadVideo(upload);
+    let bodyData = this.state;
+    fetch("http://localhost:3000/uploads", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(bodyData),
+    })
+      .then((resp) => resp.json())
+      .then((upload) => {
+        this.props.uploadVideo(upload);
+      });
+
     this.setState({
       title: "",
-      link: "",
+      src: "",
     });
   };
 
@@ -40,8 +53,8 @@ class UploadForm extends Component {
             <input
               type="text"
               placeholder="Embeded Url of Film"
-              name="link"
-              value={this.state.link}
+              name="src"
+              value={this.state.src}
               onChange={this.handleOnChange}
             />
           </div>

@@ -7,11 +7,10 @@ class QandAContainer extends Component {
   componentDidMount() {
     fetch("http://localhost:3000/questions")
       .then((resp) => resp.json())
-      .then((questions) => {
-        this.props.setQuestions(questions);
+      .then((question) => {
+        this.props.setQuestions(question);
       });
   }
-
   render() {
     return (
       <div className="q-a">
@@ -31,7 +30,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  addQuestion: (text) => dispatch({ type: "ADD_QUESTION", text }),
+  addQuestion: (question) => dispatch({ type: "ADD_QUESTION", question }),
   deleteQuestion: (id) => dispatch({ type: "DELETE_QUESTION", id }),
   setQuestions: (questions) =>
     dispatch({ type: "SET_QUESTIONS", payload: { questions: questions } }),

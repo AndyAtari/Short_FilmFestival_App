@@ -5,7 +5,7 @@ class Answers extends Component {
   render() {
     const { answers, questionId, deleteAnswer } = this.props;
     const associatedAnswers = answers.filter(
-      (answer) => answer.questionId === questionId
+      (answer) => answer.question_id === questionId
     );
 
     const answerList = associatedAnswers.map((answer, index) => {

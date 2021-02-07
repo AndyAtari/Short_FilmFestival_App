@@ -1,29 +1,33 @@
 import React, { Component } from "react";
 
 class QuestionAsked extends Component {
-  state = {
-    text: "",
-  };
+  constructor() {
+    super();
+    this.state = {
+      title: "",
+    };
+
+    this.handleOnChange = this.handleOnChange.bind(this);
+  }
 
   handleOnChange(event) {
     this.setState({
-      text: event.target.value,
+      title: event.target.value,
     });
   }
 
   handleOnSubmit(event) {
     event.preventDefault();
-    this.props.addQuestion(this.state.text);
-    const postText = {
+    let bodyData = this.state;
+    fetch("http://localhost:3000/questions", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ title: this.state.text }),
-    };
-    fetch("http://localhost:3000/questions", postText).then((resp) =>
-      resp.json()
-    );
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(bodyData),
+    }).then((resp) => resp.json());
+
+    this.props.addQuestion(bodyData);
     this.setState({
-      text: "",
+      title: "",
     });
   }
 
@@ -35,7 +39,7 @@ class QuestionAsked extends Component {
           <input
             type="text"
             placeholder="Q:"
-            value={this.state.text}
+            value={this.state.title}
             onChange={(event) => this.handleOnChange(event)}
           />
           <input className="submit" type="submit" value="Ask" />
