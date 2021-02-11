@@ -5,6 +5,7 @@ import UploadContainer from "./containers/UploadContainer";
 import Header from "./components/Header";
 import QandAContainer from "./containers/QandAContainer";
 import LoginContainer from "./containers/LoginContainer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/upload" component={UploadContainer} />
           <Route exact path="/login" component={LoginContainer} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
