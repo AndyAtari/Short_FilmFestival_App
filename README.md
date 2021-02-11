@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# An Animator's Dozen
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An online animated short film festival! This project is a prototype of a monthly animated film festival where 13 curated short films are on exhibition from the comfort of your own home. There is a Q&A section for asking filmmaker questions and you can even submit your animated short film for consideration for the next month's showcase. 
 
-## Available Scripts
+## Motivation 
 
-In the project directory, you can run:
+This was a portfolio project created for Flatiron School. I wanted to learn how to build a simple streaming platform with JavaScript React/Redux while using a Ruby on Rails backend API. 
 
-### `yarn start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After forking and cloning the repository, 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+IN backend directory:
 
-### `yarn test`
+install bundler: ```$ bundle```  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run ```$rails db:create```, then ```$ rails db:migrate```, and then ```$rails db:seed``` (if commented out, uncomment before seeding). 
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In your terminal run ```$ rails s``` in the backend directory and start your local server.
+In your terminal run ```$ npm start``` in the frontend directory and start the 2nd local server. (install npm or any necessary npm packages if you run into any errors)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run the application in the 2nd local server. 
 
-### `yarn eject`
+Have fun with An Animtator's Dozen! Watch the movies! Add movies! Find your own collection of animated short films!  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Roadmap
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+For future releases, I would like to add user authentication. Since this is a demo of an online film festival, I might rebuild the application with more features and user interactivity. As someone who has worked film festivals, I would also like to get the input of colleagues on how to make the best website for an online film festival. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contributing 
 
-## Learn More
+I absolutely welcome and encourage contribution. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Bug reports and pull requests are welcome on GitHub at https://github.com/AndyAtari/Short_FilmFestival_App. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
