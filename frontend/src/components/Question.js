@@ -2,8 +2,13 @@ import React, { Component } from "react";
 import AnswerContainer from "../containers/AnswerContainer";
 
 class Question extends Component {
+  state = {
+    showQuestion: true,
+  };
+
   handleOnClick() {
-    this.props.deleteQuestion(this.props.question.id);
+    // this.props.deleteQuestion(this.props.question.id);
+    this.setState({ showQuestion: !this.state.showQuestion });
   }
   render() {
     const { question } = this.props;
@@ -11,28 +16,39 @@ class Question extends Component {
     return (
       <div>
         <li className="question-color">
-          {question.title}{" "}
-          <button onClick={() => this.handleOnClick()}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="red"
-              class="bi bi-zoom-out"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
-              />
-              <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-              <path
-                fill-rule="evenodd"
-                d="M3 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-          </button>
-          <AnswerContainer question={question} />
+          {this.state.showQuestion && question.title}{" "}
+          {this.state.showQuestion && (
+            <button onClick={() => this.handleOnClick()}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="red"
+                class="bi bi-dash-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+              </svg>
+            </button>
+          )}
+          {!this.state.showQuestion && question.title}{" "}
+          {!this.state.showQuestion && (
+            <button onClick={() => this.handleOnClick()}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="red"
+                class="bi bi-plus-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg>
+            </button>
+          )}
+          {this.state.showQuestion && <AnswerContainer question={question} />}
         </li>
       </div>
     );
