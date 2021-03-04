@@ -3,6 +3,7 @@ import Showcase from "../components/Showcase";
 import { connect } from "react-redux";
 import Intro from "../components/Intro";
 import { getVideos } from "../redux/actionCreator";
+import Button from "../components/Button";
 
 class HomeContainer extends Component {
   state = {
@@ -18,6 +19,7 @@ class HomeContainer extends Component {
     return videos.map((mov) => (
       <div className="movie-card">
         <Showcase mov={mov} />
+        <Button />
       </div>
     ));
   };
